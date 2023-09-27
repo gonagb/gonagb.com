@@ -1,0 +1,2 @@
+# gonagb.com
+my web
