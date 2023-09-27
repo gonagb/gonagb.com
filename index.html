@@ -1,0 +1,900 @@
+<!DOCTYPE html>
+    <html lang="es en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Gonzalo Aguirre Boix">
+        <!--=============== FAVICON ===============-->
+        <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+        
+        <!--=============== REMIXICONS ===============-->
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">    
+
+        <!--=============== SWIPER CSS ===============-->
+        <link href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" rel="stylesheet">
+
+        <!--=============== CSS ===============-->
+        <link rel="stylesheet" href="assets/css/styles.css">
+
+        <!--=============== jQuery ===============-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>    
+
+        <title>gonagb.com - Responsive Portfolio Web 1.0 - Goncho</title>
+    
+    </head>
+    <body>
+    <!--==================== PRELOAD ====================-->
+        <div class="preload-container">
+            <div class="preload">
+                <img class="preload-img" src="assets/img/gonagblogo.png">
+            </div>
+        </div>
+
+        <!--==================== HEADER ====================-->
+        <header class="header" id="header">
+            <!--===== NAV =====-->
+            <nav class="nav container">
+                  <button type="button" class="nav__toggle" id="nav-toggle">
+                        <i class="ri-menu-fill"></i></span>
+                  </button>
+                  <span class="nav__brand slider-track"  href="https://www.linkedin.com/in/gonagb/">
+                    <img src="assets/img/brandlogo.jpg" class="nav__img slider" alt="gonagb logo">
+                </span>
+              
+                  <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list grid">
+                      <li class="nav__item">
+                        <a class="nav__link active" aria-current="page" href="#home">
+                          <i class="ri-home-2-line"></i> Home
+                        </a>
+                      </li>
+                      <li class="nav__item">
+                        <a class="nav__link" href="#aboutme">
+                          <i class="ri-user-3-line"></i> Acerca de mi
+                        </a>
+                      </li>
+                      <li class="nav__item">
+                        <a class="nav__link" href="#services">
+                          <i class="ri-briefcase-5-line"></i> Servicios
+                        </a>
+                      </li>
+                      <li class="nav__item">
+                        <a class="nav__link" href="#projects">
+                          <i class="ri-window-2-fill"></i> Proyectos
+                        </a>
+                      </li>
+                      <li class="nav__item">
+                        <a class="nav__link" href="#contact">
+                          <i class="ri-chat-4-line"></i> Contacto
+                        </a>
+                      </li>
+                    </ul>
+                                    
+                <div class="nav__buttons">
+                    <!-- Boton de Link que descarga mi CV -->
+
+                    <a href="assets/pdf/CV24 - Gonzalo Aguirre Boix.pdf" id="descargaCV" style="margin-right: 1rem;" download> 
+                    <i class="ri-file-download-fill" style="color: grey;"></i>
+                    </a>
+                    <!-- Boton de cambio de Idioma -->
+                    <i class="ri-earth-fill change-language" id="language-button" style="margin-right: 1rem;"></i>
+                    <!-- Switch para cambiar de tema -->
+                    <div class="theme-switch-container">
+                        <label for="theme-switch" class="theme-switch-label">
+                        <input type="checkbox" id="theme-switch">
+                        <div class="theme-switch-slider"></div>
+                        <i class="ri-sun-fill change-theme dark-theme-icon"></i>
+                        <i class="ri-moon-fill change-theme light-theme-icon"></i>
+                        </label>
+                    </div>
+                    <!-- ScrollUp -->
+                    <div id="scroll-up" class="scroll-up-btn">
+                    <i class="ri-arrow-up-s-line"></i>
+                    </div>
+                </div> 
+                <div class="nav__close" id="nav-close">
+                    <i class="ri-close-fill"></i>
+                    </div>
+            </nav>
+            
+        </header>
+
+        <!--==================== MAIN ====================-->
+        <main class="main">
+            <!--==================== HOME ====================-->
+            <section class="home section" id="home">
+                <div class="home__containter container grid section__border">
+                    <div class="home__data grid">
+                        <h1 class="home__title" id="home__text">
+                            ¡Hola! <br>
+                            Me llaman Goncho <br>
+                            Marketing Manager <br>
+                            Web Developer <br>
+                            y más cosas... <br>
+                        </h1>
+
+                        <div class="home__blob grid">
+                            <div class="home__perfil">
+                                <img src="assets/img/fotoperfil.png" alt="home perfil"> 
+                            </div>
+                        </div>
+                        <ul class="home__social">
+                            <li class="home__social-link">
+                                <a href="https://www.linkedin.com/in/gonagb/" target="_blank">
+                                    <i class="ri-linkedin-box-fill"></i>
+                                </a>
+                            </li>
+                            <li class="home__social-link">
+                                <a href="https://github.com/gonagb" target="_blank">
+                                    <i class="ri-github-fill"></i>
+                                </a>
+                            </li>
+                            <li class="home__social-link">
+                                <a href="https://api.whatsapp.com/send?phone=34636767282&text=¡Hola!,%20En%20qué%20puedo%20ayudarte?" target="_blank">
+                                    <i class="ri-whatsapp-line"></i>
+                                </a>
+                            </li>
+                        </ul>
+                        
+                    </div>
+
+                                <!--==================== HOME INFO ====================-->
+                    <div class="home__info" >
+
+                        <h3 class="home__info-title"><i class="ri-user-3-line"></i> SOBRE MÍ </h3>
+                        <p class="home__info-description anim-typewriter">
+                            Profesional en marketing
+                            digital con habilidades en
+                            desarrollo web, un
+                            comunicador efectivo y un
+                            apasionado de diversas
+                            actividades en el ámbito
+                            tecnológico y del
+                            entretenimiento.
+                            Estoy comprometido en
+                            ofrecer soluciones
+                            creativas y de calidad para
+                            impulsar el éxito de los
+                            proyectos en los que
+                            participo
+                            </p>
+
+                    </div>
+                    <!--==================== HOME INFO ====================-->
+                    <div class="home__info" >
+
+                        <h3 class="home__info-title"><i class="ri-information-fill"></i> INFO </h3>
+                        <p class="home__info-description anim-typewriter">
+                            Nacido en Valencia, España<br>
+                            el 20 de Septiembre de 1996<br>
+                        </p>
+
+                    </div>
+                    <!--==================== HOME INFO ====================-->
+                    <div class="home__info" >
+
+                        <h3 class="home__info-title"><i class="ri-global-line"></i> IDIOMAS </h3>
+                        <p class="home__info-description anim-typewriter">
+                          Castellano: Nativo<br>
+                          Catalán: Nativo (Valencià)<br>
+                          Inglés: Nivel B2 No certificado<br>
+                        </p>
+                    </div>
+                    <!-- Agregar más bloques de HOME INFO aquí -->
+                </div>
+                
+            </section>
+
+            <!--==================== SKILLS ====================-->
+            
+            <section class="skills section" id="aboutme">
+            <h2 class="section__title"><i class="ri-cursor-fill"></i> Habilidades</h2>
+            <span class="section__subtitle">Mis favoritas</span>
+
+            <div class="skills__container container grid section__border">
+                <!-- SKILLS 1 -->
+                <div class="skills__content">
+                    <h3 class="skills__title">
+                        <i class="ri-braces-line"></i> Web Developer
+                    </h3>
+                    <div class="skills__info">
+                        <div class="skills__data">
+                            <div class="skills__blob">
+                                <img src="assets/img/html-1.svg" alt="skills image">
+                            </div>
+                            <h3 class="skills__name">HTML5</h3>
+                            <span class="skills__subtitle">Junior</span>
+                        </div>
+                        <div class="skills__data">
+                            <div class="skills__blob">
+                                <img src="assets/img/css-3.svg" alt="skills image">
+                            </div>
+                            <h3 class="skills__name">CSS 3</h3>
+                            <span class="skills__subtitle">Junior</span>
+                        </div>
+                        <div class="skills__data">
+                            <div class="skills__blob">
+                                <img src="assets/img/logo-javascript.svg" alt="skills image">
+                            </div>
+                            <h3 class="skills__name">JavaScript</h3>
+                            <span class="skills__subtitle">Junior</span>
+                        </div>
+                        <div class="skills__data">
+                            <div class="skills__blob">
+                                <img src="assets/img/php_PNG29.png" alt="skills image">
+                            </div>
+                            <h3 class="skills__name">PHP</h3>
+                            <span class="skills__subtitle">Junior</span>
+                        </div>
+                        <div class="skills__data">
+                            <div class="skills__blob">
+                                <img src="assets/img/mysql-official.svg" alt="skills image">
+                            </div>
+                            <h3 class="skills__name">mySQL</h3>
+                            <span class="skills__subtitle">Junior</span>
+                        </div>
+                        <div class="skills__data">
+                            <div class="skills__blob">
+                                <img src="assets/img/visual-studio-code-logo.svg" alt="skills image">
+                            </div>
+                            <h3 class="skills__name">VS Code</h3>
+                            <span class="skills__subtitle">Junior</span>
+                        </div>
+                        
+                    </div>  
+                </div>
+
+                <!-- SKILLS 2 -->
+                <div class="skills__content">
+                    <h3 class="skills__title"> <i class="ri-funds-box-line"></i>Marketing Manager</h3>
+                    <div class="skills__info">
+                        <div class="skills__data">
+                            <div class="skills__blob">
+                                <img src="assets/img/Wordpress-Logo.svg.png" alt="skills image">
+                            </div>
+                            <h3 class="skills__name">Wordpress</h3>
+                            <span class="skills__subtitle">Normal</span>
+                        </div>
+                        <div class="skills__data">
+                            <div class="skills__blob">
+                                <img src="assets/img/canva-logo.png" alt="skills image">
+                            </div>
+                            <h3 class="skills__name">Canva</h3>
+                            <span class="skills__subtitle">Pro</span>
+                        </div>
+                        <div class="skills__data">
+                            <div class="skills__blob">
+                                <img src="assets/img/OBS Logo Vector.svg" alt="skills image">
+                            </div>
+                            <h3 class="skills__name">OBS</h3>
+                            <span class="skills__subtitle">Pro</span>
+                        </div>
+                        <div class="skills__data">
+                            <div class="skills__blob">
+                                <img src="assets/img/878px-Twitch_Glitch_Logo_Purple.svg.png" alt="skills image">
+                            </div>
+                            <h3 class="skills__name">Twitch</h3>
+                            <span class="skills__subtitle">Pro</span>
+                        </div>
+                        <div class="skills__data">
+                            <div class="skills__blob">
+                                <img src="assets/img/adobe-photoshop-2.svg" alt="skills image">
+                            </div>
+                            <h3 class="skills__name">Photoshop</h3>
+                            <span class="skills__subtitle">Pro</span>
+                        </div>
+                        <div class="skills__data">
+                            <div class="skills__blob">
+                                <img src="assets/img/Adobe_Illustrator_CC_icon.svg.png" alt="skills image">
+                            </div>
+                            <h3 class="skills__name">Illustrator</h3>
+                            <span class="skills__subtitle">Normal</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- SKILLS 3 -->
+                <div class="skills__content">
+                    <h3 class="skills__title"><i class="ri-terminal-box-line"></i>Otras Tecnologías</h3>
+                    <div class="skills__info">
+                        <div class="skills__data">
+                            <div class="skills__blob">
+                                <img src="assets/img/Bootstrap_logo.svg.png" alt="skills image">
+                            </div>
+                            <h3 class="skills__name">Bootstrap</h3>
+                            <span class="skills__subtitle">Basics</span>
+                        </div>
+                        <div class="skills__data">
+                            <div class="skills__blob">
+                                <img src="assets/img/react-2.svg" alt="skills image">
+                            </div>
+                            <h3 class="skills__name">React</h3>
+                            <span class="skills__subtitle">Basics</span>
+                        </div>
+                        <div class="skills__data">
+                            <div class="skills__blob">
+                                <img src="assets/img/angular.png" alt="skills image">
+                            </div>
+                            <h3 class="skills__name">Angular</h3>
+                            <span class="skills__subtitle">Basics</span>
+                        </div>
+                        <div class="skills__data">
+                            <div class="skills__blob">
+                                <img src="assets/img/git-icon.svg" alt="skills image">
+                            </div>
+                            <h3 class="skills__name">Git & GitHub</h3>
+                            <span class="skills__subtitle">Normal</span>
+                        </div>
+                        <div class="skills__data">
+                            <div class="skills__blob">
+                                <img src="assets/img/python-svgrepo-com.svg" alt="skills image">
+                            </div>
+                            <h3 class="skills__name">Python</h3>
+                            <span class="skills__subtitle">Junior</span>
+                        </div>
+                        <div class="skills__data">
+                            <div class="skills__blob">
+                                <img src="assets/img/java-vertical.svg" alt="skills image">
+                            </div>
+                            <h3 class="skills__name">Java</h3>
+                            <span class="skills__subtitle">Basics</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- SKILLS 4 -->
+                <div class="skills__content">
+                    <h3 class="skills__title"><i class="ri-account-pin-box-fill"></i>Otros</h3>
+                    <div class="skills__info">
+                        <div class="skills__data">
+                            <div class="skills__blob">
+                                <img src="assets/img/Google_Ads_logo.svg.png" alt="skills image">
+                            </div>
+                            <h3 class="skills__name">Ads</h3>
+                            <span class="skills__subtitle">Normal</span>
+                        </div>
+                        <div class="skills__data">
+                            <div class="skills__blob">
+                                <img src="assets/img/GAnalytics.svg.png" alt="skills image">
+                            </div>
+                            <h3 class="skills__name">Analytics</h3>
+                            <span class="skills__subtitle">Normal</span>
+                        </div>
+                        <div class="skills__data">
+                            <div class="skills__blob">
+                                <img src="assets/img/android-studio-1.png" alt="skills image">
+                            </div>
+                            <h3 class="skills__name">Android Dev</h3>
+                            <span class="skills__subtitle">Normal</span>
+                        </div>
+                        <div class="skills__data">
+                            <div class="skills__blob">
+                                <img src="assets/img/Google_Drive_icon_(2020).svg.png" alt="skills image">
+                            </div>
+                            <h3 class="skills__name">Drive</h3>
+                            <span class="skills__subtitle">Pro</span>
+                        </div>
+                        <div class="skills__data">
+                            <div class="skills__blob">
+                                <img src="assets/img/Google_Calendar_icon_(2020).svg.png" alt="skills image">
+                            </div>
+                            <h3 class="skills__name">Calendar</h3>
+                            <span class="skills__subtitle">Pro</span>
+                        </div>
+                        <div class="skills__data">
+                            <div class="skills__blob">
+                                <img src="assets/img/Steam_icon_logo.svg.png" alt="skills image">
+                            </div>
+                            <h3 class="skills__name">Videogames</h3>
+                            <span class="skills__subtitle">Hobby</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                <!-- Agregar más bloques de SKILLS aquí -->
+            </div>
+        </section>
+            <!--==================== QUALIFICATION ====================-->
+            <section class="qualification section" id="qualification">
+                <h2 class="section__title">EXPERIENCIA</h2>
+                <span class="section__subtitle">Académica y Profesional</span>
+            
+                <div class="qualification__container container grid section__border">
+                    <!-- Quali 1-->
+                    <div class="qualification__content">
+                        <h3 class="qualification__title">
+                            <i class="ri-book-open-line"></i> Educación
+                        </h3>
+                        <div class="qualification__info">
+                            <div>
+                                <h3 class="qualification__name">
+                                    GS de Desarrollo de Aplicaciones Multiplataforma
+                                </h3>
+                                <span class="qualification__location">IMF Capitol</span>
+                                <span class="qualification__year">Sep 2022 - ahora</span>
+                            </div>
+                            <div>
+                                <h3 class="qualification__name">
+                                    GS de Marketing y Publicidad
+                                </h3>
+                                <span class="qualification__location">IMF Capitol</span>
+                                <span class="qualification__year">Sept 2016 - Jul 2018</span>
+                            </div>
+                            <div>
+                                <h3 class="qualification__name">
+                                    GM de Actividades Comerciales
+                                </h3>
+                                <span class="qualification__location">Escuela Profesional Xavier</span>
+                                <span class="qualification__year">Septiembre 2013 - Julio 2015</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Quali 2 -->
+                    <div class="qualification__content">
+                        <h3 class="qualification__title">
+                            <i class="ri-book-open-line"></i> Profesional
+                        </h3>
+                        <div class="qualification__info">
+                            <div>
+                                <h3 class="qualification__name">
+                                    Responsable del Departamento de Marketing
+                                </h3>
+                                <span class="qualification__location">Prevenpyme S.L</span>
+                                <span class="qualification__year">Abr 2023 - Jul 2023</span>
+                                <span class="qualification__description">Marketing Manager. Social Media Manager. Document Designer.
+                                    Graphic Designer. Product Placement</span>
+
+                            </div>
+                            <div>
+                                <h3 class="qualification__name">
+                                    Promotor de PlayStation
+                                </h3>
+                                <span class="qualification__location">Sony Europe</span>
+                                <span class="qualification__year"> Nov 2022 - Ene 2023</span>
+                                <span class="qualification__description">Promotor de PlayStation para la campaña de Navidad 22/23 en
+                                    FNAC San Agustín</span>
+                            </div>
+                            <div>
+                                <h3 class="qualification__name">
+                                    Operador de Salón de Juegos
+                                </h3>
+                                <span class="qualification__location">Cirsa Gaming Corp</span>
+                                <span class="qualification__year">Jul 2020 - Nov 2020</span>
+                                <span class="qualification__description">Corredor de apuestas, cobrador y atención al cliente.</span>
+                            </div>
+                            <div>
+                                <h3 class="qualification__name">
+                                    Responsable de Marketing
+                                </h3>
+                                <span class="qualification__location">Terreta Games</span>
+                                <span class="qualification__year">Sep 2018 - Ene 2020</span>
+                                <span class="qualification__description">Encargado de RR.SS. y de las campañas de marketing de la
+                                    empresa</span>
+                            </div>
+                            <div>
+                                <h3 class="qualification__name">
+                                    Jefe de RR.PP y Asistente de VIP
+                                </h3>
+                                <span class="qualification__location">Ocio Noct. Valencia</span>
+                                <span class="qualification__year">Sep 2012 - Sep 2020</span>
+                                <span class="qualification__description">Venta de entradas, organización de eventos, encargado del VIP,
+                                    jefe de RR.PP, y diferentes gestiones de relaciones públicas.</span>
+                            </div>
+                            <div>
+                                <h3 class="qualification__name">
+                                    Ayudante de Marketing
+
+                                </h3>
+                                <span class="qualification__location">Espacio Arcade</span>
+                                <span class="qualification__year">Abr 2018 - Jun 2018</span>
+                                <span class="qualification__description">Prácticas del GS de Marketing y Publicidad.
+                                    Encargado del posicionamiento SEO de apps.
+                                    </span>
+                            </div>
+                            <div>
+                                <h3 class="qualification__name">
+                                    Dependiente de Comercio
+                                </h3>
+                                <span class="qualification__location">WORTEN S.L.</span>
+                                <span class="qualification__year">Nov 2014 - Feb 2015</span>
+                                <span class="qualification__description">Prácticas del GM. Sección de informática y electrónica.</span>
+                            </div>
+                        </div>
+                    </div>
+            
+                    <!-- Agregar más bloques de experiencia aquí -->
+            
+                </div>
+            </section>
+            
+            
+
+            <!--==================== SERVICES ====================-->
+            <section class="services section" id="services">
+                <h2 class="section__title">Servicios</h2>
+                <span class="section__subtitle">En qué estás interesado?</span>
+                <!-- AÑADIR SERVICIOS CUANDO SEA POSIBLE -->
+                <div class="services__container container grid section__border">
+                    <div class="services__card">
+                        <h3 class="services__main">Desarrollo Web</h3><br>
+                        <div class="services__title">
+                            <h2>Frontend</h2>
+                        </div>
+                        <div class="services__description">
+                            <i class="ri-html5-fill"></i>
+                            <i class="ri-css3-fill"></i>
+                            <i class="ri-javascript-fill"></i>
+                            <p style="font-size: .75rem;">Core</p>
+
+                        </div>
+                        <div class="services__title">
+                            <h2>Backend</h2>
+                        </div>
+                        <div class="services__description">
+                            <i class="ri-database-2-fill"></i>
+                            <i class="ri-server-fill"></i>
+                            <p style="font-size: .75rem;">mySQL + PHP</p>
+                        </div>
+                        <div class="services__border"></div>
+                    </div>
+                    <!-- Agregar más bloques de SERVICIOS aquí -->
+                    <div class="services__card">
+                        <h3 class="services__main">Marketing Manager</h3><br>
+                        <div class="services__title">
+                            <h2>Redes Sociales</h2>
+                        </div>
+                        <div class="services__description">
+                            <i class="ri-facebook-box-fill"></i>
+                            <i class="ri-twitter-x-fill"></i>
+                            <i class="ri-instagram-fill"></i>
+                            <i class="ri-linkedin-box-fill"></i>
+                            <i class="ri-tiktok-fill"></i>
+                            <p style="font-size: .75rem;">Hootsuite</p>
+
+                        </div>
+                        <div class="services__title">
+                            <h2>Analiticas</h2>
+                        </div>
+                        <div class="services__description">
+                            <i class="ri-seo-line"></i>
+                            <i class="ri-bar-chart-2-fill"></i>
+                            <i class="ri-drive-fill"></i>              
+                            <p style="font-size: .75rem;">Google</p>
+
+                        </div>
+                        <div class="services__border"></div>
+                    </div>
+                </div>
+            </section>
+            
+                       
+
+            <!--==================== PROJECTS ====================-->
+            <section class="projects section" id="projects">
+                <div class="container section__border">
+                    <h2 class="section__title">Proyectos</h2>
+                    <span class="section__subtitle">Además de muchas cosas más</span>
+                    <div class="swiper-container projects__container">
+                        <div class="swiper-wrapper">
+                            <!-- Proyecto 1 -->
+                            <div class="swiper-slide projects__content">
+                                <img class="projects__img" src="assets/img/project1.jpg" alt="Proyecto 1">
+                                <div class="projects__details">
+                                    <span class="projects__subtitle">Web</span>
+                                    <h1 class="projects__title">Páginas Web</h1>
+                                    <a href="#" class="projects__button">
+                                        Más información aquí<i class="ri-arrow-right-line"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <!-- Proyecto 2 -->
+                            <div class="swiper-slide projects__content">
+                                <img class="projects__img" src="assets/img/project2.jpg" alt="Proyecto 2">
+                                <div class="projects__details">
+                                    <span class="projects__subtitle">Social Media</span>
+                                    <h1 class="projects__title">Redes Sociales</h1>
+                                    <a href="#" class="projects__button">
+                                        Más información aquí<i class="ri-arrow-right-line"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <!-- Proyecto 3 -->
+                            <div class="swiper-slide projects__content">
+                                <img class="projects__img" src="assets/img/project3.jpg" alt="Proyecto 3">
+                                <div class="projects__details">
+                                    <span class="projects__subtitle">Videojuegos</span>
+                                    <h1 class="projects__title">Videojuegos</h1>
+                                    <a href="#" class="projects__button">
+                                        Más información aquí<i class="ri-arrow-right-line"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <!-- Proyecto 4 -->
+                            <div class="swiper-slide projects__content">
+                                <img class="projects__img" src="assets/img/project4.jpg" alt="Proyecto 4">
+                                <div class="projects__details">
+                                    <span class="projects__subtitle">Futuro</span>
+                                    <h1 class="projects__title">Próximos Proyectos</h1>
+                                    <a href="#" class="projects__button">
+                                        Más información aquí<i class="ri-arrow-right-line"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Swiper pagination -->
+                        <div class="swiper-pagination"></div>
+                        <!-- Swiper navigation -->
+                        <div class="swiper-button-next">
+                            <i class="ri-arrow-right-double-fill"></i>
+                        </div>
+                        <div class="swiper-button-prev">
+                            <i class="ri-arrow-left-double-fill"></i>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Testimonios -->
+            <section class="testimonial section">
+                <div class="container section__border">
+                    <h2 class="section__title">Gente</h2>
+                    <span class="section__subtitle">Además de muchas cosas más</span>
+                    <div class="testimonial__container swiper">
+                        <div class="swiper-wrapper">
+                            <!-- Testimonio 1 -->
+                            <div class="testimonial__content swiper-slide">
+                                <p class="testimonial__description">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Nobis adipisci atque iure quo molestiae eaque. 
+                                    Corporis vero alias quisquam nam. Dolor omnis, 
+                                    illum pariatur alias minima quibusdam autem distinctio atque.
+                                </p>
+                                <h3 class="testimonial__name">Shaquille O'Neal</h3>
+                                <span class="testimonial__subtitle">Cliente</span>
+                            </div>
+                            <!-- Testimonio 2 -->
+                            <div class="testimonial__content swiper-slide">
+                                <p class="testimonial__description">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Nobis adipisci atque iure quo molestiae eaque. 
+                                    Corporis vero alias quisquam nam. Dolor omnis, 
+                                    illum pariatur alias minima quibusdam autem distinctio atque.
+                                </p>
+                                <h3 class="testimonial__name">Fernando Alonso</h3>
+                                <span class="testimonial__subtitle">Cliente</span>
+                            </div>
+                            <!-- Testimonio 3 -->
+                            <div class="testimonial__content swiper-slide">
+                                <p class="testimonial__description">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Nobis adipisci atque iure quo molestiae eaque. 
+                                    Corporis vero alias quisquam nam. Dolor omnis, 
+                                    illum pariatur alias minima quibusdam autem distinctio atque.
+                                </p>
+                                <h3 class="testimonial__name">Samuel L. Jackson</h3>
+                                <span class="testimonial__subtitle">Cliente</span>
+                            </div>
+                            <!-- Testimonio 4 -->
+                            <div class="testimonial__content swiper-slide">
+                                <p class="testimonial__description">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Nobis adipisci atque iure quo molestiae eaque. 
+                                    Corporis vero alias quisquam nam. Dolor omnis, 
+                                    illum pariatur alias minima quibusdam autem distinctio atque.
+                                </p>
+                                <h3 class="testimonial__name">Jose Vicente Carratalá</h3>
+                                <span class="testimonial__subtitle">Mentor</span>
+                            </div>
+                            
+                        </div>
+                            <!-- Swiper pagination -->
+                        <div class="swiper-pagination"></div>
+                        <!-- Swiper navigation -->
+                        <div class="swiper-button-next">
+                            <i class="ri-arrow-drop-right-line"></i>
+                        </div>
+                        <div class="swiper-button-prev">
+                            <i class="ri-arrow-drop-left-line"></i>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            
+     
+            <!--==================== CONTACT ====================-->
+            <section class="contact section" id="contact">
+                <h2 class="section__title">Contacto</h2>
+                <span class="section__subtitle">Dame un toque!</span>
+
+                <div class="contact__container container grid section__border">
+                    <div class="contact__content">
+                        <h3 class="contact__title">
+                            <i class="ri-discuss-line"></i> Chat
+                        </h3>
+                        <div class="contact__info">
+                            <div class="contact__data">
+                                <div class="contact__blob">
+                                    <a class="contact__data-title" href="https://api.whatsapp.com/send?phone=34636767282&text=¡Hola!,%20En%20qué%20puedo%20ayudarte?" class="contact__button">
+                                        <img src="assets/img/WhatsApp.svg.png" alt="whatsapp logo">
+                                    </a>
+                                    
+                                </div>
+                                <h3 class="contact__name">WhatsApp</h3>
+                                <span class="contact__data-info"><i class="ri-arrow-up-line"></i>Escribeme <i class="ri-arrow-up-line"></i> </span>
+                            </div>
+                            <div class="contact__data">
+                                <div class="contact__blob">
+                                    <a class="contact__data-title" href="mailto:gonagb96@gmail.com" class="contact__button">
+                                        <img src="assets/img/Gmail_icon_(2020).svg.png" alt="gmail logo">
+                                    </a>
+                                    
+                                </div>
+                                <h3 class="contact__name">Gmail</h3>
+                                <span class="contact__data-info"><i class="ri-arrow-up-line"></i>Envíame un correo <i class="ri-arrow-up-line"></i> </span>
+                            </div>
+                            <div class="contact__data">
+                                <div class="contact__blob">
+                                    <a class="contact__data-title" href="https://discord.com/" class="contact__button">
+                                        <img src="assets/img/Discord new 2021.svg" alt="discord logo" >
+                                    </a>
+                                    
+                                </div>
+                                <h3 class="contact__name">Discord</h3>
+                                <span class="contact__data-info"><i class="ri-arrow-up-line"></i>Siempre activo<i class="ri-arrow-up-line"></i> </span>
+                            </div>
+                                                                                
+                        </div>
+                    <!-- Agregar más opciones de CONTACTO aquí -->
+  
+                    </div>
+
+                    <!-- CONTACT FORM -->
+
+                    <form action="post" class="contact__form" id="contact-form">
+                        <div class="contact__form-div">
+                            <label class="contact__form-tag"><i class="ri-user-3-line"></i> Nombre</label>
+                            <input type="text" name="user_name" required placeholder="Escribe tu nombre" class="contact__form-input" id="contact-name">
+                        </div>
+                        <div class="contact__form-div">
+                            <label class="contact__form-tag"><i class="ri-mail-line"></i> Email</label>
+                            <input type="text" name="user_email" required placeholder="Escribe tu Email" class="contact__form-input" id="contact-email">
+                        </div>
+                        <div class="contact__form-div contact__form-area">
+                            <label class="contact__form-tag"><i class="ri-file-text-line"></i> Descripción</label>
+                            <input type="text" name="user_description" required placeholder="Escribe lo que quieres contarme" class="contact__form-input" id="contact-description">
+                        </div>
+                    </form>
+                </div>
+            </section>
+        <!--==================== Footer ====================-->
+        <footer class="footer">
+            <div class="footer__container container grid">
+                <h1 class="footer__title">Goncho</h1>
+                <p> Web Developer | Marketing Manager</p>
+                <ul class="footer__list grid">
+                    <li class="footer__item">
+                        <a href="#home" class="footer__link">
+                            <i class="ri-home-2-line"></i> Home
+                        </a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="#aboutme" class="footer__link">
+                            <i class="ri-user-3-line"></i> Acerca de mi 
+                        </a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="#projects" class="footer__link">
+                            <i class="ri-window-2-fill"></i> Proyectos
+                        </a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="#services" class="footer__link">
+                            <i class="ri-briefcase-5-line"></i> Servicios
+                        </a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="#contact" class="footer__link">
+                            <i class="ri-chat-4-line"></i> Contacto
+                        </a>
+                    </li>
+                </ul>
+                <ul class="footer__social">
+                    <li class="footer__social-link">
+                        <a href="https://www.linkedin.com/in/gonagb/" target="_blank">
+                            <i class="ri-linkedin-box-fill"></i>
+                        </a>
+                    </li>
+                    <li class="footer__social-link">
+                        <a href="https://github.com/gonagb" target="_blank">
+                            <i class="ri-github-fill"></i>
+                        </a>
+                    </li>
+                    <li class="footer__social-link">
+                        <a href="https://api.whatsapp.com/send?phone=34636767282&text=¡Hola!,%20En%20qué%20puedo%20ayudarte?" target="_blank">
+                            <i class="ri-whatsapp-line"></i>
+                        </a>
+                    </li>
+                </ul>
+                
+            </div>
+            <div class="footer__container container">
+                <span class="footer_copy">&copy; &#x1F1EA;&#x1F1F8; 2023 - Gonzalo Aguirre Boix - gonagb.com - Todos los derechos reservados.</span>
+            </div>
+        </footer>
+       </main>
+
+       <!--============================ SCRIPTS ============================-->
+       <!--============== Social Links ==============-->
+       <script>
+        $(document).ready(function() {
+        $(".home__social-link, .footer__social-link").on("click", function(e) {
+        e.preventDefault(); // Prevenir el comportamiento predeterminado del enlace
+        
+        // Obtener el valor del atributo "href" del enlace dentro de este <li>
+        var href = $(this).data("href");
+        
+        // Redirigir a la URL del enlace en una nueva ventana/tab
+        window.open(href, "_blank");
+            });
+        });
+
+       </script>
+
+        <!--========== SCROLL UP ==========-->
+        <script>
+            const scrollUpBtn = document.querySelector(".scroll-up-btn");
+    
+            window.addEventListener("scroll", () => {
+                if (window.scrollY > 100) {
+                    scrollUpBtn.style.opacity = "1";
+                } else {
+                    scrollUpBtn.style.opacity = "0";
+                }
+            });
+    
+            scrollUpBtn.addEventListener("click", () => {
+                window.scrollTo({
+                    top: 0,
+                    behavior: "smooth"
+                });
+            });
+        </script>
+        <script>
+            var texto = "¡Hola! <br> Me llaman Goncho <br> Marketing Manager <br> Web Developer <br> y más cosas...";
+            var temporizador;
+            var contador = 0;
+            var destino = document.getElementById("home__text");
+        
+            function bucle() {
+                contador++;
+                destino.innerHTML = texto.slice(0, contador);
+                if (contador < texto.length) {
+                    temporizador = setTimeout(bucle, 100);
+                }
+            }
+        
+            // Llama a la función bucle para comenzar la animación cuando se cargue la página.
+            window.onload = function() {
+                bucle();
+            };
+        </script>
+        
+
+
+
+       
+
+        <!--=============== SCROLLREVEAL ===============-->
+        <script src="https://unpkg.com/scrollreveal"></script>
+
+        <!--=============== SWIPER JS ===============-->
+        <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+        
+        <!--=============== EMAIL JS ===============-->
+
+        <!--=============== MAIN JS ===============-->
+        <script src="assets/js/main.js"></script>
+
+
+    </body>
+</html>
