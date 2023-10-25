@@ -1135,335 +1135,332 @@ transition: bottom .3s, transform .3s;
 }
 
 /*=============== BREAKPOINTS ===============*/
-/* For small devices */
+
+/* Estilo para dispositivos pequeños (hasta 393px de ancho) */
 @media screen and (max-width: 393px) {
   .container {
-    margin-inline: 1rem;
+    margin-inline: 1rem; /* Se agrega un margen a los lados del contenedor */
   }
 
   .nav__menu {
-    padding-bottom: 4rem;
+    padding-bottom: 4rem; /* Se ajusta el espaciado inferior del menú de navegación */
   }
 
   .nav__list {
-    gap: 1rem 1.25rem;
+    gap: 1rem 1.25rem; /* Se ajusta el espaciado entre elementos de la lista de navegación */
   }
 
   .skills__info {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr); /* Cambia a dos columnas en lugar de tres en la sección de habilidades */
   }
 
   .projects__img {
-    width: 200px;
-    justify-self: center;
+    width: 200px; /* Se ajusta el ancho de las imágenes de proyectos */
+    justify-self: center; /* Se centra horizontalmente las imágenes */
   }
 }
 
-/* For medium devices */
+/* Estilo para dispositivos medianos (más de 576px de ancho) */
 @media screen and (min-width: 576px) {
   .nav,
   .nav__menu {
-    width: 80%;
+    width: 80%; /* Reducción del ancho del menú de navegación y la barra de navegación */
   }
 
   .nav {
-    margin: 0 auto;
+    margin: 0 auto; /* Centra la barra de navegación horizontalmente */
   }
 
   .skills__container {
-    justify-content: center;
+    justify-content: center; /* Centra los elementos de la sección de habilidades */
   }
   .projects__container,
   .testimonial__container {
-    width: 400px;
+    width: 400px; /* Limita el ancho de contenedores de proyectos y testimonios */
   }
   .projects__container {
     overflow: hidden;
   }
   .projects__container .swiper-button-prev {
-    left: 1rem;
+    left: 1rem; /* Ajusta la posición del botón "anterior" del carrusel de proyectos */
   }
 
   .projects__container .swiper-button-next {
-    right: 1rem;
+    right: 1rem; /* Ajusta la posición del botón "siguiente" del carrusel de proyectos */
   }
 }
 
+/* Estilo para dispositivos medianos (más de 767px de ancho) */
 @media screen and (min-width: 767px) {
   .home__container {
-    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-columns: 1fr 2fr 1fr; /* Cambia la disposición de columnas en la sección de inicio */
   }
 
   .home__info {
-    margin-top: 10rem;
+    margin-top: 10rem; /* Ajusta el margen superior en la sección de inicio */
   }
   
   .skills__container,
   .services__container,
   .contact__container {
-    grid-template-columns: repeat(2, max-content);
+    grid-template-columns: repeat(2, max-content); /* Utiliza dos columnas en lugar de una en estas secciones */
   }
   .skills__container {
-    column-gap: 5rem;
+    column-gap: 5rem; /* Ajusta el espacio entre elementos en la sección de habilidades */
   }
   .qualification__container {
-    justify-content: center;
-    column-gap: 10rem;
+    justify-content: center; /* Centra elementos en la sección de calificaciones */
+    column-gap: 10rem; /* Ajusta el espacio entre elementos en la sección de calificaciones */
   }
   .projects__container {
-    width: 500px;
+    width: 500px; /* Establece un ancho máximo para el contenedor de proyectos */
   }
   .contact__form {
-    width: 360px;
+    width: 360px; /* Establece un ancho máximo para el formulario de contacto */
   }
   .contact__container {
-    justify-content: center;
-    column-gap: 8rem;
-  }
+    justify-content: center; /* Centra elementos en la sección de contacto */
+    column-gap: 8rem; /* Ajusta el espacio entre elementos en la sección de contacto */
 }
 
-/* For large devices */
+/* Estilo para dispositivos grandes (más de 1023px de ancho) */
 @media screen and (min-width: 1023px) {
   .header {
-    top: 0;
-    bottom: initial;
-    background-color: var(--body-color);
-    transition: .4s;
+    top: 0; /* Ajusta la posición del encabezado */
+    bottom: initial; /* Restablece la posición inferior */
+    background-color: var(--body-color); /* Cambia el fondo del encabezado */
+    transition: .4s; /* Agrega una transición para los cambios en el encabezado */
   }
 
   .nav {
-    width: initial;
-    height: calc(var(--header-height) + 1.5rem);
-    box-shadow: none;
-    border-radius: 0;
-    column-gap: 3rem;
-    margin-inline: 1.5rem;
-    padding: 0;
+    width: initial; /* Restablece el ancho del menú de navegación */
+    height: calc(var(--header-height) + 1.5rem); /* Ajusta la altura de la barra de navegación */
+    box-shadow: none; /* Elimina la sombra del menú */
+    border-radius: 0; /* Restablece la forma del menú */
+    column-gap: 3rem; /* Ajusta el espacio entre elementos de la barra de navegación */
+    margin-inline: 1.5rem; /* Añade un margen a los lados del menú */
+    padding: 0; /* Elimina el relleno del menú */
   }
 
   .nav__link i,
   .nav__toggle,
   .nav__close {
-    display: none;
+    display: none; /* Oculta algunos elementos del menú */
   }
   .nav__menu {
-    width: initial;
-    margin-left: auto;
-    background-color: var(--body-color);
-    transition: background .4s;
+    width: initial; /* Restablece el ancho del menú */
+    margin-left: auto; /* Ajusta el margen izquierdo del menú */
+    background-color: var(--body-color); /* Cambia el fondo del menú */
+    transition: background .4s; /* Agrega una transición para los cambios en el fondo del menú */
   }
   .nav__list {
-    display: flex;
-    column-gap: 3rem;
+    display: flex; /* Cambia la disposición de la lista de navegación a una fila */
+    column-gap: 3rem; /* Ajusta el espacio entre elementos de la lista */
   }
   .nav__link {
-    font-size: var(--normal-font-size);
+    font-size: var(--normal-font-size); /* Ajusta el tamaño de fuente de los enlaces */
   }
   .dark-theme .nav,
   .dark-theme .nav__menu {
-    background-color: var(--body-color);
-    box-shadow: none;
+    background-color: var(--body-color); /* Cambia el fondo del menú en modo oscuro */
+    box-shadow: none; /* Elimina la sombra en modo oscuro */
   }
   .change-theme {
-    color: var(--text-color-light);
+    color: var(--text-color-light); /* Cambia el color del icono de cambio de tema */
   }
   .change-theme:hover {
-    color: var(--title-color);
-  }
+    color: var(--title-color); /* Cambia el color al pasar el cursor sobre el icono de cambio de tema */
 
   .section {
-    padding-block: 8rem 0;
+    padding-block: 8rem 0; /* Ajusta el relleno de las secciones */
   }
 
   .home__title {
-    font-size: 2.25rem;
+    font-size: 2.25rem; /* Ajusta el tamaño de fuente del título de inicio */
   }
   .scrollup {
-    right: 3rem;
+    right: 3rem; /* Ajusta la posición del botón de desplazamiento hacia arriba */
   }
   .show-scroll {
-    bottom: 5rem;
+    bottom: 5rem; /* Ajusta la posición del botón de desplazamiento visible */
   }
-/* Cambiar el background header */
+  /* Cambiar el background header */
   .bg-header{
-    box-shadow: 0 4px 20px hsl(207, 24%, 35%, .1);
+    box-shadow: 0 4px 20px hsl(207, 24%, 35%, .1); /* Agrega una sombra al encabezado */
   }
   .dark-theme .bg-header{
-    box-shadow: 0 6px 24px hsl(207, 24%, 35%, .6);
+    box-shadow: 0 6px 24px hsl(207, 24%, 35%, .6); /* Ajusta la sombra en modo oscuro */
   }
 }
 
 @media  screen and (min-width: 1048px) {
   .container{
-    margin-inline: auto;
+    margin-inline: auto; /* Centra el contenido horizontalmente */
   }
 }
-@media  screen and (min-width: 1200px) {
+
+/* Estilo para dispositivos aún más grandes (más de 1200px de ancho) */
+@media screen and (min-width: 1200px) {
   .section__border{
-    padding-bottom: 6rem;
+    padding-bottom: 6rem; /* Ajusta el espacio inferior en secciones con borde */
   }
   .section__subtitle{
-    margin-bottom: 5rem;
+    margin-bottom: 5rem; /* Ajusta el margen inferior en subtítulos de sección */
   }
   .home__title{
-  font-size: var(--biggest-font-size);
-  text-align: center;
+    font-size: var(--biggest-font-size); /* Ajusta el tamaño de fuente del título de inicio */
+    text-align: center; /* Centra el texto del título */
+  }
+  .home__blob{
+    width: 400px; /* Ajusta el tamaño de la imagen "blob" en la sección de inicio */
+    height:400px;
+    border-radius: 6rem;
+  }
+  .home__perfil{
+    width: 400px; /* Ajusta el tamaño del perfil de usuario en la sección de inicio */
+    height: 400px;
+    border-radius: 6rem;
+  }
+  .home__perfil img{
+    width: 400px; /* Ajusta el tamaño de la imagen de perfil */
+  }
+  .home__data.grid {
+    display: flex; /* Cambia la disposición de los elementos de datos en la sección de inicio a una fila */
+    justify-content: space-between; /* Ajusta el espacio entre elementos de datos */
+  }
+  .home__data{
+    row-gap: 2.5rem; /* Ajusta el espacio vertical entre elementos de datos */
+  }
+  .home__social{
+    bottom: 12rem; /* Ajusta la posición de los enlaces sociales en la sección de inicio */
+    display: flex;
+    flex-direction: column; /* Cambia la dirección de los enlaces sociales a una columna */
+  }
+  .home__social-link{
+    font-size: 1.5rem; /* Ajusta el tamaño de fuente de los enlaces sociales */
+  }
+  .home__info{
+    grid-template-columns: repeat(3, 130px); /* Cambia la disposición de columnas en la sección de información */
+    row-gap: 4rem; /* Ajusta el espacio vertical entre elementos de información */
+    margin-top: 16rem; /* Ajusta el margen superior en la sección de información */
+  }
+  .skills__container{
+    column-gap: 10rem; /* Ajusta el espacio entre elementos en la sección de habilidades */
+  }
+  .skills__title{
+    margin-bottom: 3rem; /* Ajusta el margen inferior en el título de habilidades */
+  }
+  .skills__title i{
+    font-size: 1.25rem; /* Ajusta el tamaño de fuente de iconos en el título de habilidades */
+  }
+  .skills__name{
+    font-size: var(--normal-font-size); /* Ajusta el tamaño de fuente del nombre de habilidades */
+  }
+  .skills__info{
+    gap: 3rem; /* Ajusta el espacio entre elementos de información de habilidades */
+  }
+  .qualification__container{
+    column-gap: 14rem; /* Ajusta el espacio entre elementos en la sección de calificaciones */
+  }
+  .qualification__title{
+    margin-bottom: 3rem; /* Ajusta el margen inferior en el título de calificaciones */
+  }
+  .qualification__title i{
+    font-size: 1.25rem; /* Ajusta el tamaño de fuente de iconos en el título de calificaciones */
+  }
+  .services__title,
+  .qualification__name{
+    font-size: var(--normal-font-size); /* Ajusta el tamaño de fuente de títulos de servicios y nombres de calificaciones */
+  }
+  .qualification__img{
+    width: 300px; /* Ajusta el ancho de la imagen de calificaciones */
+    left: -6rem; /* Ajusta la posición izquierda de la imagen de calificaciones */
+    bottom: 5rem; /* Ajusta la posición inferior de la imagen de calificaciones */
+  }
+  .services__container{
+    grid-template-columns: repeat(3, max-content); /* Cambia la disposición de columnas en la sección de servicios */
+  }
+  .services__card{
+    width: 320px; /* Ajusta el ancho de las tarjetas de servicios */
+    height: 380px; /* Ajusta la altura de las tarjetas de servicios */
+    border-radius: 5rem; /* Ajusta el radio de borde de las tarjetas de servicios */
+    padding: 3.5rem 1.5rem; /* Añade relleno a las tarjetas de servicios */
+  }
+  .services__border{
+    width: 320px; /* Ajusta el ancho de los bordes de las tarjetas de servicios */
+    height: 380px; /* Ajusta la altura de los bordes de las tarjetas de servicios */
+    border-radius: 5rem; /* Ajusta el radio de borde de los bordes de las tarjetas de servicios */
+  }
+  .projects__container{
+    width: 1000px; /* Establece un ancho máximo para el contenedor de proyectos */
+  }
+  .projects__container .swiper-button-prev,
+  .projects__container .swiper-button-next{
+    font-size: 3rem; /* Ajusta el tamaño de fuente de los botones de navegación del carrusel de proyectos */
+  }
+  .projects__container .swiper-button-prev{
+    left: -.4rem; /* Ajusta la posición izquierda del botón "anterior" del carrusel de proyectos */
+  }
+  .projects__container .swiper-button-next{
+    right: -.4rem; /* Ajusta la posición derecha del botón "siguiente" del carrusel de proyectos */
+  }
+  .projects__container .swiper-slide{
+    margin-bottom: 6.5rem; /* Ajusta el margen inferior entre diapositivas del carrusel de proyectos */
+  }
+  .projects__img{
+    width:320px; /* Ajusta el ancho de las imágenes de proyectos */
+    margin-bottom: 2rem; /* Ajusta el margen inferior de las imágenes de proyectos */
+  }
+  .testimonial__container{
+    width: 566px; /* Establece un ancho máximo para el contenedor de testimonios */
+  }
+  .testimonial__container .swiper-button-prev,
+  .testimonial__container .swiper-button-next{
+    font-size: 2.5rem; /* Ajusta el tamaño de fuente de los botones de navegación del carrusel de testimonios */
+  }
+  .testimonial__container .swiper-button-prev{
+    left: calc(50% - 5rem); /* Ajusta la posición izquierda del botón "anterior" del carrusel de testimonios */
+  }
+  .testimonial__container .swiper-button-next{
+    right: calc(50% - 5rem); /* Ajusta la posición derecha del botón "siguiente" del carrusel de testimonios */
+  }
+  .testimonial__description{
+    font-size: var(--h2-font-size); /* Ajusta el tamaño de fuente de las descripciones de testimonios */
+    margin-bottom: 2rem; /* Ajusta el margen inferior de las descripciones de testimonios */
+  }
+  .testimonial__img{
+    width: 200px; /* Ajusta el ancho de las imágenes de testimonios */
+    top: 13rem; /* Ajusta la posición superior de las imágenes de testimonios */
+    right: 4rem; /* Ajusta la posición derecha de las imágenes de testimonios */
+  }
+  .contact__title{
+    margin-bottom: 3rem; /* Ajusta el margen inferior del título de contacto */
+  }
+  .contact__title i{
+    font-size: 1.25rem; /* Ajusta el tamaño de fuente de iconos en el título de contacto */
+  }
+  .contact__info{
+    row-gap: 3rem; /* Ajusta el espacio vertical entre elementos de información de contacto */
+  }
+  .contact__data-info{
+    font-size: var(--normal-font-size); /* Ajusta el tamaño de fuente de información de contacto */
+  }
+  .footer__container{
+    padding: 4rem 0 3rem; /* Ajusta el relleno en el contenedor del pie de página */
+  }
+  .footer__list{
+    column-gap: 3rem; /* Ajusta el espacio entre elementos en la lista del pie de página */
+    margin: 3rem; /* Ajusta el margen en la lista del pie de página */
+  }
+  .footer__social{
+    column-gap: 2rem; /* Ajusta el espacio entre enlaces sociales en el pie de página */
+  }
+  .footer__social-link{
+    font-size: 1.5rem; /* Ajusta el tamaño de fuente de enlaces sociales en el pie de página */
+  }
+  .footer__copy{
+    margin-top: 5rem; /* Ajusta el margen superior en el texto de derechos de autor en el pie de página */
+  }
 }
-.home__blob{
-  width: 400px;
-  height:400px;
-  border-radius: 6rem;
-}
-.home__perfil{
-  width: 400px;
-  height: 400px;
-  border-radius: 6rem;
-}
-.home__perfil img{
-  width: 400px;
-}
-.home__data.grid {
-  display: flex;
-  justify-content: space-between;
-}
-.home__data{
-  row-gap: 2.5rem;
-}
-.home__social{
-  bottom: 12rem;
-  display: flex;
-  flex-direction: column;
-}
-.home__social-link{
-  font-size: 1.5rem;
-}
-.home__info{
-  grid-template-columns: repeat(3, 130px);
-  row-gap: 4rem;
-  margin-top: 16rem;
-}
-.skills__container{
-  column-gap: 10rem;
-}
-.skills__title{
-  margin-bottom: 3rem;
-}
-.skills__title i{
-  font-size: 1.25rem;
-}
-.skills__name{
-  font-size: var(--normal-font-size);
-}
-.skills__info{
-  gap: 3rem;
-}
-.qualification__container{
-  column-gap: 14rem;
-}
-.qualification__title{
-  margin-bottom: 3rem;
-}
-.qualification__title i{
-  font-size: 1.25rem;
-}
-.services__title,
-.qualification__name{
-  font-size: var(--normal-font-size);
-}
-.qualification__img{
-  width: 300px;
-  left: -6rem;
-  bottom: 5rem;
-}
-.services__container{
-  grid-template-columns: repeat(3, max-content);
-}
-.services__card{
-  width: 320px;
-  height: 380px;
-  border-radius: 5rem;
-  padding: 3.5rem 1.5rem;
-}
-.services__border{
-  width: 320px;
-  height: 380px;
-  border-radius: 5rem;
-}
-
-.projects__container{
-  width: 1000px;
-}
-
-.projects__container .swiper-button-prev,
-.projects__container .swiper-button-next{
-  font-size: 3rem;
-}
-.projects__container .swiper-button-prev{
-  left: -.4rem;
-}
-.projects__container .swiper-button-next{
-  right: -.4rem;
-}
-.projects__container .swiper-slide{
-  margin-bottom: 6.5rem;
-}
-.projects__img{
-  width:320px;
-  margin-bottom: 2rem;
-}
-
-.testimonial__container{
-  width: 566px;
-}
-.testimonial__container .swiper-button-prev,
-.testimonial__container .swiper-button-next{
-  font-size: 2.5rem;
-}
-.testimonial__container .swiper-button-prev{
-  left: calc(50% - 5rem);
-}
-.testimonial__container .swiper-button-next{
-  right: calc(50% - 5rem);
-}
-.testimonial__container .swiper-slide{
-  margin-bottom: 6rem;
-}
-.testimonial__description{
-  font-size: var(--h2-font-size);
-  margin-bottom: 2rem;
-}
-.testimonial__img{
-  width: 200px;
-  top: 13rem;
-  right: 4rem;
-}
-.contact__title{
-  margin-bottom: 3rem;
-}
-.contact__title i{
-  font-size: 1.25rem
-}
-.contact__info{
-  row-gap: 3rem;
-}
-.contact__data-info{
-  font-size: var(--normal-font-size);
-}
-
-.footer__container{
-  padding: 4rem 0 3rem;
-}
-.footer__list{
-  column-gap: 3rem;
-  margin: 3rem;
-}
-.footer__social{
-  column-gap: 2rem;
-}
-.footer__social-link{
-  font-size: 1.5rem;
-}
-.footer__copy{
-  margin-top: 5rem;
 }
 }
