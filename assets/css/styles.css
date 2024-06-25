@@ -406,10 +406,20 @@ input[type="checkbox"]:checked + .theme-switch-label + .theme-switch-slider {
 }
 
 .preload img {
-  max-width: 800px; /* Ajusta el tamaño de la imagen de carga según sea necesario */
-  max-height: 600px;
+  max-width: 1000px; /* Ajusta el tamaño de la imagen de carga según sea necesario */
+  max-height: 800px;
 }
 
+.preload-text {
+  color: black;
+  font-size: var(--biggest-font-size);
+  font-weight: bold;
+}
+
+.preload-des{
+  color: black;
+  font-size: var(--h1-font-size);
+}
 
 /*=============== HOME ===============*/
 .home__container{

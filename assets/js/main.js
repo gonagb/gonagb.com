@@ -81,7 +81,7 @@ window.addEventListener('load', (event) => {
   setTimeout(() => {
       const preloadContainer = document.querySelector('.preload-container');
       preloadContainer.style.display = 'none';
-  }, 800); 
+  }, 1600); 
 });
 
 
