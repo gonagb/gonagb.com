@@ -489,11 +489,11 @@ input[type="checkbox"]:checked + .theme-switch-label + .theme-switch-slider {
   align-items: center;
   justify-self: center;
   display: flex;
-  column-gap: 1.25rem;
+  column-gap: 3rem;
 }
 
 .home__social-link a{
-  font-size: 1.25rem;
+  font-size: 3rem;
   color: var(--title-color);
   transition: color .3s;
   cursor: pointer;
@@ -510,7 +510,7 @@ input[type="checkbox"]:checked + .theme-switch-label + .theme-switch-slider {
 
 .home__info-title{
   font-family: var(--body-font);
-  font-size: var(--normal-font-size);
+  font-size: var(--tiny-font-size);
   font-weight: 400;
   color: var(--text-color-light);
   margin-bottom: 0.5rem;
@@ -519,6 +519,7 @@ input[type="checkbox"]:checked + .theme-switch-label + .theme-switch-slider {
 .home__info-description,
 .home__info-number{
   font-family: var(--font-semi-bold);
+  font-size: var(--tiny-font-size);
   color: var(--title-color);
   text-align: justify;
   width: 800px;
